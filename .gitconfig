@@ -1,0 +1,15 @@
+[user]
+	name = Nate Tangsurat
+	email = ntangsurat@gogoair.com
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[core]
+	editor = vim
+[color]
+[commit]
+[commit]
+	template = ~/.gittemplate
