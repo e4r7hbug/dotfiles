@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-custom=$HOME/git/github.dotfiles/.bash_ntangsurat
+custom=$HOME/.bash_ntangsurat
 if [ -f $custom ]; then
   . $custom
 fi
