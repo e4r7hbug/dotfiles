@@ -61,3 +61,4 @@ target/
 
 # Secrets
 .ssh/*rsa*
+keys/*
