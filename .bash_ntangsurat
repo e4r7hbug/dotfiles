@@ -1,3 +1,4 @@
+# Detect Mac Homebrew package
 if command -v brew > /dev/null 2>&1; then
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
