@@ -1,3 +1,5 @@
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
 ba=~/.bash_aliases
 if [ -f $ba ]; then
   . $ba
