@@ -64,3 +64,6 @@ target/
 .ssh/*rsa*
 keys/*
 secrets/*
+
+# Allow all README
+!**README.md
