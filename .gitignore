@@ -61,7 +61,7 @@ target/
 
 # Secrets
 .aws/
-.ssh/*rsa*
+**rsa*
 keys/*
 secrets/*
 
