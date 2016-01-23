@@ -1,6 +1,5 @@
 
-# Created by https://www.gitignore.io/api/python,linux,vim
-
+# Created by https://www.gitignore.io/api/linux,osx,windows,python,vim
 
 ### Linux ###
 *~
@@ -43,13 +42,26 @@ Temporary Items
 .apdisk
 
 
-### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -111,6 +123,15 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
 
 
 ### Custom ###
