@@ -1,0 +1,31 @@
+---
+- name: Upgrade System
+  become: yes
+  apt:
+    update_cache: yes
+    upgrade: dist
+    cache_valid_time: 43200
+
+- name: Install standard applications
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - atop
+    - bash-completion
+    - dnstop
+    - git
+    - htop
+    - iftop
+    - iotop
+    - itop
+    - procps
+    - python-dev
+    - python-pip
+    - python3-dev
+    - screen
+    - tmux
+    - tree
+    - xclip
+    - vim
