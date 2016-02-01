@@ -7,5 +7,5 @@ alias a3.='. ./v3/bin/activate'
 alias v3='virtualenv -p python3 v3'
 
 # Quick journal of the day
-alias journal='atom ~/git/gogo.bag/journal/`date "+%Y%m%d"`.md'
+alias journal='atom-beta ~/git/gogo.bag/journal/`date "+%Y%m%d"`.md'
 alias vj='vim ~/git/gogo.bag/journal/`date "+%Y%m%d"`.md'
