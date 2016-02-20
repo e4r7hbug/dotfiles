@@ -1,8 +1,17 @@
 # vi: set ft=sh :
 
+if [ -d "$HOME/.local/bin" ]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 # Golang
 if [ -d $HOME/go ]; then
   export GOPATH=$HOME/go
+fi
+
+# Brew's bins
+if [ -d "/usr/local/sbin" ]; then
+  export PATH="/usr/local/sbin:$PATH"
 fi
 
 # Detect Mac Homebrew package
@@ -16,15 +25,6 @@ else
   if [ -f $autojump_sh ]; then
     . $autojump_sh
   fi
-fi
-
-if [ -d "$HOME/.local/bin" ]; then
-  export PATH="$HOME/.local/bin:$PATH"
-fi
-
-# Brew's bins
-if [ -d "/usr/local/sbin" ]; then
-  export PATH="/usr/local/sbin:$PATH"
 fi
 
 type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
