@@ -4,6 +4,7 @@ beautifulsoup4
 blinkstick
 boto3
 click
+colorlog
 curdling
 django
 fabric
