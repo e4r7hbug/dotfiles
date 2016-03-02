@@ -25,6 +25,7 @@ setuptools
 termcolor
 tornado
 tox
+twine
 vulture
 wrapt
 yapf
