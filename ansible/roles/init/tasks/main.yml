@@ -21,12 +21,14 @@
     - iotop
     - itop
     - procps
-    - python-dev
-    - python-pip
-    - python3-dev
     - screen
     - silversearcher-ag
     - tmux
     - tree
     - xclip
     - vim
+
+    # development packages
+    - python-dev
+    - python-pip
+    - python3-dev
