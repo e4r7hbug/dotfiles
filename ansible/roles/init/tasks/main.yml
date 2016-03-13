@@ -28,6 +28,11 @@
     - xclip
     - vim
 
+    # build tools
+    - build-essential
+    - clang
+    - clang-format-3.7
+
     # development packages
     - python-dev
     - python-pip
