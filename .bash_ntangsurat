@@ -37,13 +37,17 @@ type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
 # added by Pew
 source $(pew shell_config)
 
-liquid=~/git/github.liquidprompt/liquidprompt
+
+# GitHub Projects
+GITDIR=~/git
+
+liquid=$GITDIR/github.liquidprompt/liquidprompt
 if [ -f $liquid ]; then
   . $liquid
 fi
 
 # github/hub
-hub=~/git/github.hub/etc/hub.bash_completion.sh
+hub=$GITDIR/github.hub/etc/hub.bash_completion.sh
 if [ -f $hub ]; then
   . $hub
 fi
