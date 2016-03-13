@@ -15,4 +15,7 @@ ansible-playbook -i local main.yml
 
 # If launch error mentions ssh, use connection override
 ansible-playbook -i local -c local main.yml
+
+# If play fails with sudo password required, use --ask-become-pass option
+ansible-playbook -i local -K main.yml
 ```
