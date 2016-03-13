@@ -41,12 +41,13 @@ source $(pew shell_config)
 # GitHub Projects
 GITDIR=~/git
 
+# https://github.com/nojhan/liquidprompt
 liquid=$GITDIR/github.liquidprompt/liquidprompt
 if [ -f $liquid ]; then
   . $liquid
 fi
 
-# github/hub
+# https://github.com/github/hub
 hub=$GITDIR/github.hub/etc/hub.bash_completion.sh
 if [ -f $hub ]; then
   . $hub
