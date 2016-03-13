@@ -37,6 +37,9 @@ type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
 # added by Pew
 source $(pew shell_config)
 
+# Enable pip bash completion
+type -P pip &>/dev/null && eval "$(pip completion --bash)"
+
 
 # GitHub Projects
 GITDIR=~/git
