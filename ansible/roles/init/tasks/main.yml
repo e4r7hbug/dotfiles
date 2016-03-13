@@ -25,6 +25,7 @@
     - python-pip
     - python3-dev
     - screen
+    - silversearcher-ag
     - tmux
     - tree
     - xclip
