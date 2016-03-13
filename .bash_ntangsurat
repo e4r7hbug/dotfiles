@@ -41,3 +41,9 @@ liquid=~/git/github.liquidprompt/liquidprompt
 if [ -f $liquid ]; then
   . $liquid
 fi
+
+# github/hub
+hub=~/git/github.hub/etc/hub.bash_completion.sh
+if [ -f $hub ]; then
+  . $hub
+fi
