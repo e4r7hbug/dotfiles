@@ -41,7 +41,6 @@
   become: yes
   user:
     name: "{{ user }}"
-    generate_ssh_key: yes
 
 - include:
     dotfiles.yml
