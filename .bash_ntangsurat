@@ -23,14 +23,9 @@ fi
 if command -v brew > /dev/null 2>&1; then
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-  completions=$(brew --prefix)/etc/bash_completion
-  if [ -f $completions ]; then
-    . $completions
-  fi
-
   completions2=$(brew --prefix)/share/bash-completion/bash_completion
   if [ -f $completions2 ]; then
-    . $completions
+    . $completions2 &>/dev/null
   fi
 else
   autojump_sh=/usr/share/autojump/autojump.sh
