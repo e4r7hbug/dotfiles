@@ -37,10 +37,5 @@
     # development packages
     - zeal
 
-- name: Create main user
-  become: yes
-  user:
-    name: "{{ user }}"
-
 - include:
     dotfiles.yml

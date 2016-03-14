@@ -1,5 +1,14 @@
 ---
 - hosts: all
+  tasks:
+  - name: Create main user
+    become: yes
+    user:
+      name: ntangsurat
+      groups: sudo
+
+- hosts: all
+  remote_user: ntangsurat
   vars:
     user: ntangsurat
   roles:
