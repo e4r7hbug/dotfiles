@@ -36,3 +36,6 @@
 
     # development packages
     - zeal
+
+- include:
+    dotfiles.yml

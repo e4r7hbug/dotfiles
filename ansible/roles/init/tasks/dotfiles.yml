@@ -1,0 +1,5 @@
+---
+- name: Get the dots!
+  git:
+    repo: https://github.com/e4r7hbug/dotfiles.git
+    dest: ~/git/github.dotfiles
