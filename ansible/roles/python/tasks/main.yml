@@ -1,0 +1,25 @@
+---
+- name: Install Python essentials
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - python-dev
+    - python-pip
+    - python3-dev
+
+- name: Copy over pip requirements for installing pew virtual environments
+  copy:
+    src: requirements.txt
+    dest: ~/requirements.txt
+    mode: 644
+
+- name: Install minimal user pip things
+  pip:
+    extra_args: "--user"
+    state: latest
+    name: "{{ item }}"
+  with_items:
+    - pip
+    - pew

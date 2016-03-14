@@ -35,7 +35,4 @@
     - clang-format-3.7
 
     # development packages
-    - python-dev
-    - python-pip
-    - python3-dev
     - zeal
