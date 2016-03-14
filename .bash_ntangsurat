@@ -22,8 +22,15 @@ fi
 # Detect Mac Homebrew package
 if command -v brew > /dev/null 2>&1; then
   [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+
+  completions=$(brew --prefix)/etc/bash_completion
+  if [ -f $completions ]; then
+    . $completions
+  fi
+
+  completions2=$(brew --prefix)/share/bash-completion/bash_completion
+  if [ -f $completions2 ]; then
+    . $completions
   fi
 else
   autojump_sh=/usr/share/autojump/autojump.sh
