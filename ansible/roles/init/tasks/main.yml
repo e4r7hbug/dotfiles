@@ -37,5 +37,11 @@
     # development packages
     - zeal
 
+- name: Create main user
+  become: yes
+  user:
+    name: "{{ user }}"
+    generate_ssh_key: yes
+
 - include:
     dotfiles.yml
