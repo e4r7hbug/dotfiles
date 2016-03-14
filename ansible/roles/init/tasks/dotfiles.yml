@@ -6,6 +6,13 @@
     repo: https://github.com/e4r7hbug/dotfiles.git
     dest: "{{ dotfiles }}"
 
+- name: Set up some needed directories
+  become: yes
+  become_user: "{{ user }}"
+  file:
+    path: "~{{ user }}/.config/pip/"
+    state: directory
+
 - name: Lace up the dots
   become: yes
   become_user: "{{ user }}"
@@ -18,6 +25,7 @@
     - .bash_aliases
     - .bash_ntangsurat
     - .bashrc
+    - .config/pip/pip.conf
     - .gitconfig
     - .gittemplate
     - .profile
