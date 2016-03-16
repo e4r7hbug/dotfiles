@@ -13,3 +13,7 @@
 [commit]
 [commit]
 	template = ~/.gittemplate
+[webui]
+	autoupdate = true
+[alias]
+	webui = !/Users/ntangsurat/.git-webui/release/libexec/git-core/git-webui
