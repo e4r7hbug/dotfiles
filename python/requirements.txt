@@ -28,6 +28,7 @@ termcolor
 tornado
 tox
 twine
+vcrpy
 vulture
 wrapt
 yapf
