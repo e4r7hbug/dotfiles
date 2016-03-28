@@ -18,6 +18,7 @@ laboratory
 percol
 pew
 pip
+prospector[with_everything]
 pylint
 pytest
 pytest-cov
