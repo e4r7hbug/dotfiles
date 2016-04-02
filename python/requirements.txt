@@ -12,6 +12,7 @@ django
 fabric
 flake8
 flask
+httpbin
 ipython
 isort
 laboratory
