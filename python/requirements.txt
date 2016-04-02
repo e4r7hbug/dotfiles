@@ -30,6 +30,7 @@ termcolor
 tornado
 tox
 twine
+uwsgi
 vcrpy
 vulture
 wrapt
