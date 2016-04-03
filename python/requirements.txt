@@ -4,6 +4,7 @@ awscli
 beautifulsoup4
 blinkstick
 boto3
+caniusepython3
 click
 colorama
 colorlog
@@ -12,10 +13,12 @@ django
 fabric
 flake8
 flask
+future
 httpbin
 ipython
 isort
 laboratory
+modernize
 percol
 pew
 pip
