@@ -63,3 +63,6 @@ hub=$GITDIR/github.hub/etc/hub.bash_completion.sh
 if [ -f $hub ]; then
   . $hub
 fi
+
+# iTerm2
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
