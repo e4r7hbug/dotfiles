@@ -19,6 +19,7 @@ ipython
 isort
 laboratory
 modernize
+murl
 percol
 pew
 pip
@@ -32,6 +33,7 @@ setuptools
 termcolor
 tornado
 tox
+tryagain
 twine
 uwsgi
 vcrpy
