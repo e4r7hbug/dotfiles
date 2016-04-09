@@ -17,6 +17,7 @@ fi
 # Golang
 if [ -d $HOME/go ]; then
   export GOPATH=$HOME/go
+  PATH="$HOME/go/bin:$PATH"
 fi
 
 # Mac Python pip bins
