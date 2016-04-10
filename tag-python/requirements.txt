@@ -1,5 +1,6 @@
 # vex
 ansible
+ansible-lint
 awscli
 beautifulsoup4
 blinkstick
