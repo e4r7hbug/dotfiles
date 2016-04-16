@@ -25,6 +25,7 @@ percol
 pew
 pip
 prospector[with_everything]
+pydocstyle
 pylint
 pytest
 pytest-cov
