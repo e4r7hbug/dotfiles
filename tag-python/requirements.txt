@@ -24,6 +24,7 @@ murl
 percol
 pew
 pip
+proselint
 prospector[with_everything]
 pydocstyle
 pylint
