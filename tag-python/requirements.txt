@@ -33,6 +33,7 @@ pytest-cov
 requests
 saws
 setuptools
+sphinx
 termcolor
 tornado
 tox
