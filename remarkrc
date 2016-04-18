@@ -1,0 +1,8 @@
+{
+    "plugins": {
+        "lint": {
+            "list-item-indent": "space",
+            "ordered-list-marker-value": "one"
+        }
+    }
+}
