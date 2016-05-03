@@ -4,3 +4,7 @@ ControlMaster auto
 ControlPath ~/.ssh/socket-%r@%h:%p
 StrictHostKeyChecking no
 UserKnownHostsFile=/dev/null
+# GSSAPIAuthentication no
+# ServerAliveInterval 10
+# ServerAliveCountMax 3
+# LogLevel DEBUG
