@@ -15,24 +15,24 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 # Golang
-if [ -d $HOME/go ]; then
+if [ -d "$HOME/go" ]; then
   export GOPATH=$HOME/go
   PATH="$HOME/go/bin:$PATH"
 fi
 
 # Mac Python pip bins
 PIP_BIN=$HOME/Library/Python/2.7/bin
-if [ -d $PIP_BIN ]; then
+if [ -d "$PIP_BIN" ]; then
   export PATH="$PIP_BIN:$PATH"
 fi
 
 # Detect Mac Homebrew package
 if command -v brew > /dev/null 2>&1; then
-  [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+	[[ -s "$(brew --prefix)/etc/profile.d/autojump.sh" ]] && . "$(brew --prefix)/etc/profile.d/autojump.sh"
 
   completions2=$(brew --prefix)/share/bash-completion/bash_completion
-  if [ -f $completions2 ]; then
-    . $completions2 &>/dev/null
+  if [ -f "$completions2" ]; then
+    . "$completions2" &>/dev/null
   fi
 else
   autojump_sh=/usr/share/autojump/autojump.sh
@@ -44,7 +44,7 @@ fi
 type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
 
 # added by Pew
-source $(pew shell_config)
+source "$(pew shell_config)"
 
 # Enable pip bash completion
 type -P pip &>/dev/null && eval "$(pip completion --bash)"
