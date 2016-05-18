@@ -16,8 +16,6 @@ set PATH \
     "$HOME/go/bin" \
         $PATH
 
-if test -d "$HOME/go"
-    set -x GOPATH "$HOME/go"
-end
+set -x GOPATH "$HOME/go"
 
 source /usr/share/autojump/autojump.fish
