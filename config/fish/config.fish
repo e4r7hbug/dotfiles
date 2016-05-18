@@ -21,3 +21,4 @@ set -x GOPATH "$HOME/go"
 set fish_complete_path "$HOME/git/github.fish-pip-completion" $fish_complete_path
 
 source /usr/share/autojump/autojump.fish
+source (pew shell_config)
