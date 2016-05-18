@@ -19,3 +19,5 @@ set PATH \
 if test -d "$HOME/go"
     set -x GOPATH "$HOME/go"
 end
+
+source /usr/share/autojump/autojump.fish
