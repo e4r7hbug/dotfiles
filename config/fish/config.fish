@@ -15,3 +15,7 @@ set PATH \
     "$HOME/Library/Python/2.7/bin" \
     "$HOME/go/bin" \
         $PATH
+
+if test -d "$HOME/go"
+    set -x GOPATH "$HOME/go"
+end
