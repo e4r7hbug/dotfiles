@@ -8,3 +8,10 @@ set -gx OMF_PATH "/home/e4r7hbug/.local/share/omf"
 source $OMF_PATH/init.fish
 
 fish_vi_mode
+
+set PATH \
+    "$HOME/bin" \
+    "$HOME/.local/bin" \
+    "$HOME/Library/Python/2.7/bin" \
+    "$HOME/go/bin" \
+        $PATH
