@@ -9,12 +9,11 @@ source $OMF_PATH/init.fish
 
 fish_vi_mode
 
-set PATH \
-    "$HOME/bin" \
-    "$HOME/.local/bin" \
-    "$HOME/Library/Python/2.7/bin" \
-    "$HOME/go/bin" \
-        $PATH
+for word in "$HOME/"{bin,.local/bin,Library/Python/2.7/bin,go/bin}
+    if not contains $word $PATH
+        set PATH $word $PATH
+    end
+end
 
 set -x GOPATH "$HOME/go"
 
