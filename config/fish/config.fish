@@ -10,6 +10,10 @@ set -x GOPATH "$HOME/go"
 
 set fish_complete_path "$HOME/git/github.fish-pip-completion" $fish_complete_path
 
-source /usr/share/autojump/autojump.fish
-source /usr/local/share/autojump/autojump.fish
+switch (uname)
+    case Linux
+        source /usr/share/autojump/autojump.fish
+    case Darwin
+        source /usr/local/share/autojump/autojump.fish
+end
 source (pew shell_config)
