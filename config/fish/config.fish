@@ -1,4 +1,4 @@
-fish_vi_mode
+fish_vi_key_bindings
 
 for word in "$HOME/"{bin,.local/bin,Library/Python/2.7/bin,go/bin}
     if not contains $word $PATH
