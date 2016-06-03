@@ -1,6 +1,6 @@
 fish_vi_key_bindings
 
-for word in "$HOME/"{bin,.local/bin,Library/Python/2.7/bin,go/bin}
+for word in "$HOME/"{bin,.local/bin,go/bin}
     if not contains $word $PATH
         set PATH $word $PATH
     end
@@ -15,5 +15,10 @@ switch (uname)
         source /usr/share/autojump/autojump.fish
     case Darwin
         source /usr/local/share/autojump/autojump.fish
+        for word in {"$HOME/Library/Python/2.7/bin",/usr/local/sbin}
+            if not contains $word $PATH
+                set PATH $word $PATH
+            end
+        end
 end
 source (pew shell_config)
