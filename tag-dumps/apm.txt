@@ -89,7 +89,7 @@
 ├── whitespace@0.32.2
 └── wrap-guide@0.38.1
 
-[36mCommunity Packages (53)[39m /Users/ntangsurat/.atom/packages
+[36mCommunity Packages (56)[39m /Users/ntangsurat/.atom/packages
 ├── MagicPython@0.5.11
 ├── Zen@0.16.4
 ├── activate-power-mode@0.5.2
@@ -128,8 +128,11 @@
 ├── linter-shellcheck@1.2.0
 ├── merge-conflicts@1.4.4
 ├── minimap@4.24.4
+├── minimap-cursorline@0.2.0
 ├── minimap-find-and-replace@4.5.1
+├── minimap-highlight-selected@4.4.0
 ├── minimap-linter@1.1.1
+├── minimap-pigments@0.2.1
 ├── minimap-split-diff@0.3.1
 ├── octocat-syntax@0.1.5
 ├── photon-syntax@0.8.2
