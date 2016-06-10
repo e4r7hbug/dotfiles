@@ -89,7 +89,7 @@
 ├── whitespace@0.32.2
 └── wrap-guide@0.38.1
 
-[36mCommunity Packages (49)[39m /Users/ntangsurat/.atom/packages
+[36mCommunity Packages (51)[39m /Users/ntangsurat/.atom/packages
 ├── MagicPython@0.5.11
 ├── Zen@0.16.4
 ├── activate-power-mode@0.5.2
@@ -128,6 +128,7 @@
 ├── minimap@4.24.4
 ├── minimap-find-and-replace@4.5.1
 ├── minimap-linter@1.1.1
+├── minimap-split-diff@0.3.1
 ├── octocat-syntax@0.1.5
 ├── photon-syntax@0.8.2
 ├── pigments@0.29.2
@@ -137,6 +138,7 @@
 ├── python-yapf@0.11.0
 ├── robin-hood-syntax@1.0.0
 ├── sort-lines@0.14.0
+├── split-diff@1.0.2
 ├── tidy-markdown@3.0.1
 └── vim-mode@0.65.1
 
