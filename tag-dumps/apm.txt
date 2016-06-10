@@ -117,7 +117,7 @@
 ├── language-fish-shell@1.0.4
 ├── language-groovy@0.6.0
 ├── language-terraform@0.7.4
-├── linter@1.11.4
+├── linter@1.11.5
 ├── linter-checkbashisms@0.1.5
 ├── linter-flake8@1.13.0
 ├── linter-jsonlint@1.2.5
@@ -125,12 +125,12 @@
 ├── linter-pylint@1.2.0
 ├── linter-shellcheck@1.2.0
 ├── merge-conflicts@1.4.4
-├── minimap@4.24.3
+├── minimap@4.24.4
 ├── minimap-find-and-replace@4.5.1
 ├── minimap-linter@1.1.1
 ├── octocat-syntax@0.1.5
 ├── photon-syntax@0.8.2
-├── pigments@0.29.1
+├── pigments@0.29.2
 ├── pretty-json@1.4.1
 ├── proton@4.0.2
 ├── python-isort@0.0.7
