@@ -89,7 +89,7 @@
 ├── whitespace@0.32.2
 └── wrap-guide@0.38.1
 
-[36mCommunity Packages (51)[39m /Users/ntangsurat/.atom/packages
+[36mCommunity Packages (53)[39m /Users/ntangsurat/.atom/packages
 ├── MagicPython@0.5.11
 ├── Zen@0.16.4
 ├── activate-power-mode@0.5.2
@@ -113,12 +113,14 @@
 ├── hidpi@0.11.0
 ├── kuali-light-syntax@1.1.0
 ├── language-ansible@0.1.6
+├── language-docker@1.1.6
 ├── language-dots@0.0.4
 ├── language-fish-shell@1.0.4
 ├── language-groovy@0.6.0
 ├── language-terraform@0.7.4
 ├── linter@1.11.5
 ├── linter-checkbashisms@0.1.5
+├── linter-docker@0.1.2
 ├── linter-flake8@1.13.0
 ├── linter-jsonlint@1.2.5
 ├── linter-pydocstyle@0.4.2
