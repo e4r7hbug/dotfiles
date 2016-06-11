@@ -19,6 +19,7 @@ httpbin
 ipython
 isort
 laboratory
+lizard
 modernize
 murl
 percol
