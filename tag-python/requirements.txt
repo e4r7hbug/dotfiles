@@ -27,6 +27,7 @@ pew
 pip
 proselint
 prospector[with_everything]
+pycodestyle
 pydocstyle
 pylint
 pytest
