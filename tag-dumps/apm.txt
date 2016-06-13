@@ -93,10 +93,10 @@
 ├── MagicPython@0.5.11
 ├── Zen@0.16.4
 ├── activate-power-mode@0.5.2
-├── atom-beautify@0.29.7
+├── atom-beautify@0.29.8
 ├── atom-jinja2@0.5.0
 ├── autocomplete-bash-builtins@0.3.4
-├── autocomplete-python@1.7.5
+├── autocomplete-python@1.8.1
 ├── base64@0.3.0
 ├── blame@0.10.0
 ├── dash@1.6.1
@@ -118,10 +118,10 @@
 ├── language-fish-shell@1.0.4
 ├── language-groovy@0.6.0
 ├── language-terraform@0.7.4
-├── linter@1.11.5
+├── linter@1.11.10
 ├── linter-checkbashisms@0.1.5
 ├── linter-docker@0.1.2
-├── linter-flake8@1.13.0
+├── linter-flake8@1.13.2
 ├── linter-jsonlint@1.2.5
 ├── linter-pydocstyle@0.4.2
 ├── linter-pylint@1.2.0
