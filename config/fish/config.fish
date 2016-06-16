@@ -15,7 +15,7 @@ switch (uname)
         source /usr/share/autojump/autojump.fish
     case Darwin
         source /usr/local/share/autojump/autojump.fish
-        for word in {"$HOME/Library/Python/2.7/bin",/usr/local/sbin}
+        for word in {"$HOME/Library/Python/3.5/bin",/usr/local/sbin}
             if not contains $word $PATH
                 set PATH $word $PATH
             end
