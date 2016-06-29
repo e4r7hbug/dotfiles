@@ -25,6 +25,7 @@ murl
 percol
 pew
 pip
+prompter
 proselint
 prospector[with_everything]
 pycodestyle
