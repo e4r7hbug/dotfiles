@@ -36,6 +36,7 @@ pytest-cov
 requests
 saws
 setuptools
+siesta
 sphinx
 termcolor
 tornado
