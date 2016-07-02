@@ -47,4 +47,5 @@ uwsgi
 vcrpy
 vulture
 wrapt
+xonsh
 yapf
