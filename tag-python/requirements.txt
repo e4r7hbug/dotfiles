@@ -38,6 +38,8 @@ saws
 setuptools
 siesta
 sphinx
+sphinx
+sphinxcontrib-napoleon
 termcolor
 tornado
 tox
