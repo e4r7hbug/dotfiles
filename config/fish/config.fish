@@ -1,6 +1,6 @@
 fish_vi_key_bindings
 
-for word in "$HOME/"{bin,.local/bin,go/bin,node_modules/.bin}
+for word in "$HOME/"{bin,.local/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
     if not contains $word $PATH
         set PATH $word $PATH
     end
