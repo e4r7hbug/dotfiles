@@ -6,6 +6,31 @@ alias a3='. ~/v3/bin/activate'
 alias a3.='. ./v3/bin/activate'
 alias v3='virtualenv -p python3 v3'
 
+journal () {
+  year=$(date "+%Y")
+  month=$(date "+%m")
+  date=$(date "+%Y%m%d")
+
+  journal_dir="$HOME/git/gogo.bag/journal"
+  year_dir="$journal_dir/$year"
+  month_dir="$year_dir/$month"
+
+  journal_file="$month_dir/$date.md"
+
+  if ! [ -d "$year_dir" ]
+  then
+    mkdir "$year_dir"
+
+    if ! [ -d "$month_dir" ]
+    then
+      mkdir "$month_dir"
+    fi
+  fi
+
+  return "$journal_file"
+}
+
 # Quick journal of the day
-alias journal='atom-beta ~/git/gogo.bag/journal/`date "+%Y%m%d"`.md'
-alias vj='vim ~/git/gogo.bag/journal/`date "+%Y%m%d"`.md'
+journal journal_file
+alias aj="atom-beta $journal_file"
+alias vj="vim $journal_file"
