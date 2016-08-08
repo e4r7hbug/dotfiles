@@ -20,6 +20,7 @@ ipython
 isort
 laboratory
 lizard
+magic-wormhole
 modernize
 murl
 percol
