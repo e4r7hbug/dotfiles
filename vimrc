@@ -12,14 +12,14 @@ Plugin 'tpope/vim-fugitive'
 call vundle#end()
 filetype plugin indent on
 
+set laststatus=2
+silent! colorscheme solarized
+let g:airline_theme = 'serene'
+
 hi CursorLine cterm=inverse
 set cc=80
 set cursorline
 set timeoutlen=50
-
-set laststatus=2
-silent! colorscheme solarized
-let g:airline_theme = 'serene'
 
 "Syntastic things
 set statusline+=%#warningmsg#
