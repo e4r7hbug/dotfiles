@@ -18,3 +18,5 @@
 	autoupdate = true
 [alias]
 	webui = !/Users/ntangsurat/.git-webui/release/libexec/git-core/git-webui
+[merge]
+	ff = only
