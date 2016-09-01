@@ -12,8 +12,9 @@ function journal -d "Generate journal of the day file path"
   if not test -d "$year_dir"
     mkdir "$year_dir"
 
-    if not test -d "$month_dir"
-      mkdir -p "$month_dir"
-    end
+  end
+
+  if not test -d "$month_dir"
+    mkdir -p "$month_dir"
   end
 end
