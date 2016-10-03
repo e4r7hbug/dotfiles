@@ -6,7 +6,7 @@ for word in "$HOME/"{bin,.local/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
     end
 end
 
-set -x GOPATH "$HOME/go"
+set -x GOROOT "$HOME/go"
 
 set fish_complete_path "$HOME/git/github.fish-pip-completion" $fish_complete_path
 
