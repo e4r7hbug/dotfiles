@@ -2,6 +2,7 @@
   "dependencies": {
     "bower": "",
     "diff-so-fancy": "",
-    "less": ""
+    "less": "",
+    "webpack": ""
   }
 }
