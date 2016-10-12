@@ -19,6 +19,7 @@ future
 httpbin
 ipython
 isort
+jedi
 laboratory
 lizard
 magic-wormhole
