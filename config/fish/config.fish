@@ -1,12 +1,13 @@
 fish_vi_key_bindings
 
-for word in "$HOME/"{bin,.local/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
+for word in "$HOME/"{bin,.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
     if not contains $word $PATH
         set PATH $word $PATH
     end
 end
 
-set -x GOROOT "$HOME/go"
+set -x GOPATH "$HOME/go"
+set -x GOROOT "$HOME/.local/go"
 
 set fish_complete_path "$HOME/git/github.fish-pip-completion" $fish_complete_path
 
