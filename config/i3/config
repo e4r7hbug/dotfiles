@@ -159,4 +159,6 @@ bar {
 ###################
 # Custom settings #
 ###################
+bindsym $mod+Escape exec i3lock -c 3d9970
+
 exec fluxgui
