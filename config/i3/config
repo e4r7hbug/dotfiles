@@ -156,4 +156,7 @@ bar {
 }
 
 
+###################
+# Custom settings #
+###################
 exec fluxgui
