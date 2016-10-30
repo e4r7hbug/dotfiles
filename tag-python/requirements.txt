@@ -7,6 +7,7 @@ blinkstick
 boto3
 caniusepython3
 click
+coala-bears
 colorama
 colorlog
 curdling
