@@ -20,3 +20,5 @@
 	webui = !/Users/ntangsurat/.git-webui/release/libexec/git-core/git-webui
 [merge]
 	ff = only
+[rerere]
+	enabled = true
