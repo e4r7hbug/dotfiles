@@ -1,0 +1,3 @@
+ansible
+ansible-container
+ansible-lint
