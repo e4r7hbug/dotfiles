@@ -1,6 +1,7 @@
 [user]
 	name = Nate Tangsurat
 	email = e4r7hbug@gmail.com
+	signingkey = 73E3E740
 [push]
 	default = simple
 [filter "lfs"]
@@ -14,6 +15,7 @@
 [commit]
 [commit]
 	template = ~/.gittemplate
+	gpgsign = yes
 [webui]
 	autoupdate = true
 [alias]
@@ -22,3 +24,5 @@
 	ff = only
 [rerere]
 	enabled = true
+[tag]
+	forceSignAnnotated = yes
