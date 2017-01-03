@@ -15,7 +15,6 @@
 [commit]
 [commit]
 	template = ~/.gittemplate
-	gpgsign = yes
 [webui]
 	autoupdate = true
 [alias]
