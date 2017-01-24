@@ -1,0 +1,1 @@
+$PATH.extend(['~/.local/bin', '~/go/bin'])
