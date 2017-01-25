@@ -1,3 +1,8 @@
+import datetime
+import pathlib
+import subprocess
+
+
 $PATH.insert(0, '~/.local/go/bin')
 $PATH.insert(0, '~/node_modules/.bin')
 $PATH.insert(0, '~/go/bin')
@@ -5,3 +10,21 @@ $PATH.insert(0, '~/.local/bin')
 
 $GOPATH = pathlib.Path($HOME) / 'go'
 $GOROOT = pathlib.Path($HOME) / '.local' / 'go'
+
+
+def journal(args, stdin=None):
+    today = datetime.date.today()
+    journal_path = pathlib.Path($HOME) / 'git' / 'gogo.bag' / 'journal'
+    journal_file_path = journal_path / str(today.year) / '{month:02d}'.format(month=today.month) / '{year:d}{month:02d}{day:02d}.md'.format(
+        year=today.year, month=today.month, day=today.day)
+
+    if not journal_file_path.parent.parent.exists():
+        journal_file_path.parent.parent.mkdir()
+
+    if not journal_file_path.parent.exists():
+        journal_file_path.parent.mkdir()
+
+    subprocess.run(['vim', '{0}'.format(journal_file_path)])
+
+
+aliases['vj'] = journal
