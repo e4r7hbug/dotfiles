@@ -1,1 +1,3 @@
-$PATH.extend(['~/.local/bin', '~/go/bin', '~/node_modules/.bin'])
+$PATH.insert(0, '~/node_modules/.bin')
+$PATH.insert(0, '~/go/bin')
+$PATH.insert(0, '~/.local/bin')
