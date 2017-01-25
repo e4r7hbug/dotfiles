@@ -1,3 +1,7 @@
+$PATH.insert(0, '~/.local/go/bin')
 $PATH.insert(0, '~/node_modules/.bin')
 $PATH.insert(0, '~/go/bin')
 $PATH.insert(0, '~/.local/bin')
+
+$GOPATH = pathlib.Path($HOME) / 'go'
+$GOROOT = pathlib.Path($HOME) / '.local' / 'go'
