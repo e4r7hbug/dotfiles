@@ -14,7 +14,7 @@ $GOROOT = pathlib.Path($HOME) / '.local' / 'go'
 
 def journal(args, stdin=None):
     today = datetime.date.today()
-    journal_path = pathlib.Path($HOME) / 'git' / 'gogo.bag' / 'journal'
+    journal_path = pathlib.Path($HOME) / 'git' / 'ntangsurat.bag' / 'journal'
     journal_file_path = journal_path / str(today.year) / '{month:02d}'.format(month=today.month) / '{year:d}{month:02d}{day:02d}.md'.format(
         year=today.year, month=today.month, day=today.day)
 

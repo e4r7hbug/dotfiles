@@ -11,7 +11,7 @@ journal () {
   month=$(date "+%m")
   date=$(date "+%Y%m%d")
 
-  journal_dir="$HOME/git/gogo.bag/journal"
+  journal_dir="$HOME/git/ntangsurat.bag/journal"
   year_dir="$journal_dir/$year"
   month_dir="$year_dir/$month"
 

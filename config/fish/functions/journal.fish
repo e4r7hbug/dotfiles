@@ -3,7 +3,7 @@ function journal -d "Generate journal of the day file path"
   set month (date "+%m")
   set date (date "+%Y%m%d")
 
-  set journal_dir "$HOME/git/gogo.bag/journal"
+  set journal_dir "$HOME/git/ntangsurat.bag/journal"
   set year_dir "$journal_dir/$year"
   set month_dir "$year_dir/$month"
 
