@@ -1,0 +1,11 @@
+{
+ "foreign_shells": [],
+ "xontribs": [
+  "apt_tabcomplete",
+  "docker_tabcomplete",
+  "prompt_ret_code",
+  "vox",
+  "vox_tabcomplete",
+  "click_tabcomplete"
+ ]
+}

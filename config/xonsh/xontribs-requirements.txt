@@ -1,0 +1,4 @@
+xonsh-apt-tabcomplete
+xonsh-click-tabcomplete
+xonsh-docker-tabcomplete
+xonsh-vox-tabcomplete
