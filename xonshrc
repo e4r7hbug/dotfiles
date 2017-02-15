@@ -2,21 +2,31 @@ import datetime
 import pathlib
 import subprocess
 
+HOME_PATH = pathlib.Path($HOME)
+USER_BIN_PATHS = [
+    '.local/go/bin',
+    'node_modules/.bin',
+    'go/bin',
+    '.local/bin',
+]
 
-$PATH.insert(0, '~/.local/go/bin')
-$PATH.insert(0, '~/node_modules/.bin')
-$PATH.insert(0, '~/go/bin')
-$PATH.insert(0, '~/.local/bin')
+for user_bin_path in USER_BIN_PATHS:
+    path = str(HOME_PATH / user_bin_path)
 
-$GOPATH = pathlib.Path($HOME) / 'go'
-$GOROOT = pathlib.Path($HOME) / '.local' / 'go'
+    if path not in $PATH:
+        $PATH.insert(0, path)
+
+$GOPATH = HOME_PATH / 'go'
+$GOROOT = HOME_PATH / '.local' / 'go'
 
 
 def journal(args, stdin=None):
     today = datetime.date.today()
-    journal_path = pathlib.Path($HOME) / 'git' / 'ntangsurat.bag' / 'journal'
-    journal_file_path = journal_path / str(today.year) / '{month:02d}'.format(month=today.month) / '{year:d}{month:02d}{day:02d}.md'.format(
-        year=today.year, month=today.month, day=today.day)
+
+    journal_path = HOME_PATH / 'git' / 'ntangsurat.bag' / 'journal'
+    journal_file_path = journal_path / str(today.year) / '{month:02d}'.format(
+        month=today.month) / '{year:d}{month:02d}{day:02d}.md'.format(
+            year=today.year, month=today.month, day=today.day)
 
     if not journal_file_path.parent.parent.exists():
         journal_file_path.parent.parent.mkdir()
