@@ -4,6 +4,7 @@
 	signingkey = 73E3E740
 [push]
 	default = simple
+	gpgSign = if-asked
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -16,6 +17,7 @@
 [commit]
 [commit]
 	template = ~/.gittemplate
+	gpgSign = true
 [webui]
 	autoupdate = true
 [alias]
@@ -25,4 +27,4 @@
 [rerere]
 	enabled = true
 [tag]
-	forceSignAnnotated = yes
+	forceSignAnnotated = true
