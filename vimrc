@@ -1,3 +1,5 @@
+set shell=bash
+
 set nocompatible
 syntax on
 filetype off
