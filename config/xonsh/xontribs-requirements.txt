@@ -1,3 +1,5 @@
+prompt_toolkit
+xonsh
 xonsh-apt-tabcomplete
 xonsh-click-tabcomplete
 xonsh-docker-tabcomplete
