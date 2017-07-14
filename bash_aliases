@@ -27,7 +27,7 @@ journal () {
     fi
   fi
 
-  return "$journal_file"
+  return 0
 }
 
 # Quick journal of the day
