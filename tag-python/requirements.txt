@@ -1,6 +1,7 @@
 # vex
 ansible
 ansible-lint
+aws-shell
 awscli
 beautifulsoup4
 blinkstick
@@ -38,7 +39,6 @@ pylint
 pytest
 pytest-cov
 requests
-saws
 setuptools
 siesta
 sphinx
