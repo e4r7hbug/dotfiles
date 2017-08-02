@@ -10,6 +10,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
+Plugin 'dodie/vim-disapprove-deep-indentation'
 "Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
@@ -32,3 +33,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+let g:LookOfDisapprovalSpaceTreshold=16
+let g:LookOfDisapprovalTabTreshold=2
