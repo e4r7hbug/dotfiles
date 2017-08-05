@@ -15,7 +15,6 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 [commit]
-[commit]
 	template = ~/.gittemplate
 	gpgSign = true
 [webui]
