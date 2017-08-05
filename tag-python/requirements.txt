@@ -22,6 +22,7 @@ httpbin
 ipython
 isort
 jedi
+jupyter
 laboratory
 lizard
 magic-wormhole
