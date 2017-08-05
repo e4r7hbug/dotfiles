@@ -12,6 +12,7 @@ coala-bears
 colorama
 colorlog
 curdling
+cython
 detox
 django
 fabric
