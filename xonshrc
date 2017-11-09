@@ -1,3 +1,4 @@
+#!/usr/bin/env xonsh
 import datetime
 import pathlib
 import subprocess
