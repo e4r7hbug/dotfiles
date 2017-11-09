@@ -1,9 +1,13 @@
 #!/usr/bin/env xonsh
 import datetime
 import pathlib
+import shutil
 import subprocess
 
 HOME_PATH = pathlib.Path($HOME)
+
+TEMPLATE_PATH = HOME_PATH / '.daily_template.md'
+
 USER_BIN_PATHS = [
     '.local/go/bin',
     'node_modules/.bin',
@@ -34,6 +38,9 @@ def journal(args, stdin=None):
 
     if not journal_file_path.parent.exists():
         journal_file_path.parent.mkdir()
+
+    if not journal_file_path.exists():
+        shutil.copy(TEMPLATE_PATH, journal_file_path)
 
     subprocess.run(['vim', '{0}'.format(journal_file_path)])
 
