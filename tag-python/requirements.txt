@@ -32,6 +32,7 @@ murl
 percol
 pew
 pip
+pipdeptree
 prompter
 proselint
 prospector[with_everything]
