@@ -1,5 +1,6 @@
 # vex
 ansible
+ansible-container
 ansible-lint
 aws-shell
 awscli
