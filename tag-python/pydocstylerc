@@ -1,2 +1,2 @@
 [pydocstyle]
-ignore = D107
+add-ignore = D107
