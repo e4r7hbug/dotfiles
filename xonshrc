@@ -12,6 +12,7 @@ USER_BIN_PATHS = [
     '.local/go/bin',
     'node_modules/.bin',
     'go/bin',
+    '.cargo/bin',
     '.local/bin',
 ]
 
