@@ -6,20 +6,51 @@
     state: latest
   with_items:
     - python-dev
-    - python-pip
     - python3-dev
 
-- name: Copy over pip requirements for installing pew virtual environments
-  copy:
-    src: requirements.txt
-    dest: ~/requirements.txt
-    mode: 644
+- name: Get pip
+  get_url:
+    url: https://bootstrap.pypa.io/get-pip.py
+    dest: /tmp
+    mode: +x
 
-- name: Install minimal user pip things
+- name: Install user pip
+  command: /tmp/get-pip.py --user
+  args:
+    creates: ~/.local/bin/pip
+
+- name: Install Python Packages
   pip:
+    executable: ~/.local/bin/pip
     extra_args: "--user"
-    state: latest
     name: "{{ item }}"
+    state: forcereinstall
   with_items:
-    - pip
-    - pew
+    - pew[pythonz]
+    - wheel
+
+- name: Install custom Python
+  command: "{{ local_pew }} install {{ python_version }}"
+  args:
+    creates: ~/.pythonz/pythons/CPython-{{ python_version }}/bin/python
+
+- name: Custom Python location
+  command: "{{ local_pew }} locate_python {{ python_version }}"
+  register: custom_python
+
+- set_fact:
+    python_major: "{{ python_version.split('.')[0] }}"
+    python_minor: "{{ python_version.split('.')[0:-1] | join('.') }}"
+
+- name: Link custom Python
+  file:
+    path: ~/.local/bin/python{{ item.value }}
+    src: "{{ item.key }}"
+    state: link
+  with_dict:
+    "{{ custom_python.stdout }}": "{{ python_version }}"
+    "~/.local/bin/python{{ python_version }}": "{{ python_minor }}"
+    "~/.local/bin/python{{ python_minor }}": "{{ python_major }}"
+
+- name: Generate wheels
+  command: pip wheel -r ~/.requirements.txt
