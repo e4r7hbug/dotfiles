@@ -1,0 +1,9 @@
+---
+- name: Add RCM APT Repository
+  become: yes
+  apt_repository:
+    repo: ppa:martin-frost/thoughtbot-rcm
+
+- name: Install RCM
+  package:
+    name: rcm
