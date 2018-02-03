@@ -13,4 +13,5 @@
     user: ntangsurat
   roles:
   - init
+  - rcm
   - python
