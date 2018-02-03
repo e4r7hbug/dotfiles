@@ -1,2 +1,0 @@
----
-dotfiles: "~{{ user }}/git/github.dotfiles"
