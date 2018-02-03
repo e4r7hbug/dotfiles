@@ -8,3 +8,12 @@
   become: yes
   package:
     name: rcm
+
+- name: Fetch dotfiles
+  git:
+    dest: ~/.dotfiles
+    repo: git@github.com:e4r7hbug/dotfiles.git
+    update: no
+
+- name: Run RCM
+  command: rcup -v -t python
