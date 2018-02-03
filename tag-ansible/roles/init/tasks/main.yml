@@ -8,7 +8,7 @@
 
 - name: Install standard applications
   become: yes
-  apt:
+  package:
     name: "{{ item }}"
     state: latest
     update_cache: no
@@ -21,18 +21,19 @@
     - iftop
     - iotop
     - itop
+    - most
     - procps
     - screen
     - silversearcher-ag
     - tmux
     - tree
-    - xclip
     - vim
+    - xclip
 
     # build tools
     - build-essential
     - clang
-    - clang-format-3.7
+    - clang-format
 
     # development packages
     - zeal
