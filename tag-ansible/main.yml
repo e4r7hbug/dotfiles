@@ -5,7 +5,9 @@
     become: yes
     user:
       name: ntangsurat
-      groups: sudo
+      groups:
+        - docker
+        - sudo
 
 - hosts: all
   remote_user: ntangsurat
