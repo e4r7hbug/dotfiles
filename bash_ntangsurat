@@ -16,6 +16,12 @@ if [ -d "$HOME/.local/go" ]; then
   PATH="$HOME/go/bin:$HOME/.local/go/bin:$PATH"
 fi
 
+# NPM packages
+NPM_BIN="$HOME/node_modules/.bin/"
+if [[ -d "$NPM_BIN" ]]; then
+  export PATH="$NPM_BIN:$PATH"
+fi
+
 # Mac Python pip bins
 PIP_BIN=$HOME/Library/Python/2.7/bin
 if [ -d "$PIP_BIN" ]; then
