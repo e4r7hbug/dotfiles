@@ -10,10 +10,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ]; then
-  export PATH="$HOME/.local/bin:$PATH"
-fi
-
 # Golang
 if [ -d "$HOME/.local/go" ]; then
   export GOROOT="$HOME/.local/go"
@@ -67,3 +63,8 @@ fi
 
 # iTerm2
 #test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+LOCAL_BIN="$HOME/.local/bin"
+if [ -d "$LOCAL_BIN" ]; then
+  export PATH="$LOCAL_BIN:$PATH"
+fi
