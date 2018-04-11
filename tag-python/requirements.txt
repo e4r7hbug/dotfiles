@@ -42,6 +42,7 @@ pydocstyle
 pylint
 pytest
 pytest-cov
+python-language-server[all]
 requests
 restview
 setuptools
