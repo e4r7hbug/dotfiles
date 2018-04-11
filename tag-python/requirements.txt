@@ -31,7 +31,7 @@ magic-wormhole
 modernize
 murl
 percol
-pew
+pew[pythonz]
 pip
 pipdeptree
 prompter
