@@ -44,14 +44,8 @@ else
   fi
 fi
 
-type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
-
 # added by Pew
 source "$(pew shell_config)"
-
-# Enable pip bash completion
-type -P pip &>/dev/null && eval "$(pip completion --bash)"
-
 
 # GitHub Projects
 GITDIR=~/git
@@ -80,3 +74,8 @@ MAC_BASH_COMPLETION='/usr/local/share/bash-completion/bash_completion'
 if [ -f "$MAC_BASH_COMPLETION" ]; then
   source "$MAC_BASH_COMPLETION"
 fi
+
+# Enable pip bash completion
+type -P pip &>/dev/null && eval "$(pip completion --bash)"
+
+type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
