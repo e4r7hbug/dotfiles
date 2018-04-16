@@ -11,10 +11,11 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # Golang
-if [ -d "$HOME/.local/go" ]; then
-  export GOROOT="$HOME/.local/go"
-  PATH="$HOME/go/bin:$HOME/.local/go/bin:$PATH"
+GOROOT_DIR="$HOME/.local/go"
+if [ -d "$GOROOT_DIR" ]; then
+  export GOROOT="$GOROOT_DIR"
 fi
+PATH="$HOME/go/bin:$HOME/.local/go/bin:$PATH"
 
 # NPM packages
 NPM_BIN="$HOME/node_modules/.bin/"
