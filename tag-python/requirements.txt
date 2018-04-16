@@ -34,6 +34,7 @@ percol
 pew[pythonz]
 pip
 pipdeptree
+pipenv
 prompter
 proselint
 prospector[with_everything]
