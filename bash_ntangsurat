@@ -75,3 +75,8 @@ LOCAL_BIN="$HOME/.local/bin"
 if [ -d "$LOCAL_BIN" ]; then
   export PATH="$LOCAL_BIN:$PATH"
 fi
+
+MAC_BASH_COMPLETION='/usr/local/share/bash-completion/bash_completion'
+if [ -f "$MAC_BASH_COMPLETION" ]; then
+  source "$MAC_BASH_COMPLETION"
+fi
