@@ -8,3 +8,7 @@ UserKnownHostsFile=/dev/null
 # ServerAliveInterval 10
 # ServerAliveCountMax 3
 # LogLevel DEBUG
+
+# Host github.com
+#   Hostname ssh.github.com
+#   Port 443
