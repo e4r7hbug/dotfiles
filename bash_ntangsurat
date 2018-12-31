@@ -1,4 +1,4 @@
-# vi: set ft=sh :
+# vi: set filetype=sh shiftwidth=2 tabstop=2 expandtab autoindent :
 
 # Brew's bins
 if [ -d "/usr/local/sbin" ]; then
