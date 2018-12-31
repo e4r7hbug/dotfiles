@@ -50,7 +50,9 @@ if [ -d "$LOCAL_BIN" ]; then
 fi
 
 # added by Pew
-source "$(pew shell_config)"
+if command -v pew > /dev/null 2>&1; then
+  source "$(pew shell_config)"
+fi
 
 # GitHub Projects
 GITDIR=~/git
