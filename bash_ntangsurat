@@ -70,9 +70,15 @@ if [ -f $liquid ]; then
 fi
 
 # https://github.com/github/hub
-hub=$GITDIR/github.hub/etc/hub.bash_completion.sh
-if [ -f $hub ]; then
-  . $hub
+if command -v hub > /dev/null 2>&1; then
+  hub() {
+    unset -f hub
+
+    hub="$(go env GOPATH)/src/github.com/github/hub/etc/hub.bash_completion.sh"
+    if [ -f $hub ]; then
+      . $hub
+    fi
+  }
 fi
 
 # iTerm2
