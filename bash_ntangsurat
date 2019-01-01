@@ -98,4 +98,10 @@ if command -v pip > /dev/null 2>&1; then
   }
 fi
 
-type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
+if command -v vex > /dev/null 2>&1; then
+  vex() {
+    unset -f vex
+
+    eval "$(vex --shell-config bash)"
+  }
+fi
