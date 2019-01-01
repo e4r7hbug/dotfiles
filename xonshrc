@@ -49,3 +49,4 @@ def journal(args, stdin=None):
 aliases['vj'] = journal
 
 $GPG_TTY = $(tty)
+$XONSH_COLOR_STYLE = 'arduino'
