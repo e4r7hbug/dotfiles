@@ -16,6 +16,7 @@
 	autoupdate = true
 [alias]
 	webui = !/Users/ntangsurat/.git-webui/release/libexec/git-core/git-webui
+	dtag = !/bin/bash -c \"git tag $(date +%Y%m%d-%H%M%S)\"
 	lg = log --all --graph --oneline
 [merge]
 	ff = only
