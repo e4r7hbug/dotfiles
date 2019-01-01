@@ -90,6 +90,12 @@ if [ -f "$MAC_BASH_COMPLETION" ]; then
 fi
 
 # Enable pip bash completion
-type -P pip &>/dev/null && eval "$(pip completion --bash)"
+if command -v pip > /dev/null 2>&1; then
+  pip() {
+    unset -f pip
+
+    eval "$(pip completion --bash)"
+  }
+fi
 
 type -P vex &>/dev/null && eval "$(vex --shell-config bash)"
