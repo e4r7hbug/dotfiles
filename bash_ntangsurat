@@ -105,3 +105,5 @@ if command -v vex > /dev/null 2>&1; then
     eval "$(vex --shell-config bash)"
   }
 fi
+
+export GPG_TTY="$(tty)"

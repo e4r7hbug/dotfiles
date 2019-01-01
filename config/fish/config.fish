@@ -8,6 +8,7 @@ end
 
 set -x GOPATH "$HOME/go"
 set -x GOROOT "$HOME/.local/go"
+set -x GPG_TTY (tty)
 
 set fish_complete_path "$HOME/git/github.fish-pip-completion" $fish_complete_path
 
