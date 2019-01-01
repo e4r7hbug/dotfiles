@@ -36,3 +36,8 @@ let g:syntastic_check_on_wq = 0
 
 let g:LookOfDisapprovalSpaceTreshold=16
 let g:LookOfDisapprovalTabTreshold=2
+
+" Override settings
+set modeline modelines=1
+
+set backspace=indent,eol,start
