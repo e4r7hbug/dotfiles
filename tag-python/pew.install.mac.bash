@@ -1,5 +1,6 @@
 #!/bin/bash
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
+PREFIX="$(brew --prefix openssl@1.1)"
+export CPPFLAGS="-I$PREFIX/include"
+export LDFLAGS="-L$PREFIX/lib"
 
-pew install $@
+pew install --reinstall $@
