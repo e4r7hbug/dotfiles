@@ -16,6 +16,7 @@
 	autoupdate = true
 [alias]
 	webui = !/Users/ntangsurat/.git-webui/release/libexec/git-core/git-webui
+	lg = log --all --graph --oneline
 [merge]
 	ff = only
 [rerere]
