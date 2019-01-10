@@ -12,10 +12,8 @@ switch (uname)
         source /usr/share/autojump/autojump.fish
     case Darwin
         source /usr/local/share/autojump/autojump.fish
-        for word in {"$HOME/Library/Python/3.5/bin",/usr/local/sbin}
-            if not contains $word $PATH
-                set PATH $word $PATH
-            end
-        end
+
+	set --append fish_user_paths /usr/local/sbin
 end
+
 source (pew shell_config)
