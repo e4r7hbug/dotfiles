@@ -12,3 +12,5 @@ hi Visual cterm=reverse ctermbg=NONE
 
 au FileType sh set shiftwidth=2 tabstop=2 expandtab autoindent
 au FileType yaml set shiftwidth=2 tabstop=2 expandtab autoindent
+
+colo industry
