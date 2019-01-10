@@ -31,15 +31,6 @@ fi
 
 # Detect Mac Homebrew package
 if command -v brew > /dev/null 2>&1; then
-  brew() {
-    unset -f brew
-
-    completions2=$(brew --prefix)/share/bash-completion/bash_completion
-    if [ -f "$completions2" ]; then
-      . "$completions2" &>/dev/null
-    fi
-  }
-
   AUTOJUMP="$(brew --prefix)/etc/profile.d/autojump.sh"
   [[ -s "${AUTOJUMP}" ]] && . "${AUTOJUMP}"
 
@@ -55,11 +46,6 @@ if [ -d "$LOCAL_BIN" ]; then
   export PATH="$LOCAL_BIN:$PATH"
 fi
 
-# added by Pew
-if command -v pew > /dev/null 2>&1; then
-  source "$(pew shell_config)"
-fi
-
 # GitHub Projects
 GITDIR=~/git
 
@@ -69,41 +55,12 @@ if [ -f $liquid ]; then
   . $liquid
 fi
 
-# https://github.com/github/hub
-if command -v hub > /dev/null 2>&1; then
-  hub() {
-    unset -f hub
-
-    hub="$(go env GOPATH)/src/github.com/github/hub/etc/hub.bash_completion.sh"
-    if [ -f $hub ]; then
-      . $hub
-    fi
-  }
-fi
-
 # iTerm2
 #test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 MAC_BASH_COMPLETION='/usr/local/share/bash-completion/bash_completion'
 if [ -f "$MAC_BASH_COMPLETION" ]; then
   source "$MAC_BASH_COMPLETION"
-fi
-
-# Enable pip bash completion
-if command -v pip > /dev/null 2>&1; then
-  pip() {
-    unset -f pip
-
-    eval "$(pip completion --bash)"
-  }
-fi
-
-if command -v vex > /dev/null 2>&1; then
-  vex() {
-    unset -f vex
-
-    eval "$(vex --shell-config bash)"
-  }
 fi
 
 export GPG_TTY="$(tty)"
