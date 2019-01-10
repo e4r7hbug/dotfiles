@@ -1,10 +1,6 @@
 fish_vi_key_bindings
 
-for word in "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
-    if not contains $word $PATH
-        set PATH $word $PATH
-    end
-end
+set fish_user_paths "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
 
 set -x GOPATH "$HOME/go"
 set -x GOROOT "$HOME/.local/go"
