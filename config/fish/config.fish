@@ -1,7 +1,7 @@
 fish_vi_key_bindings
 
 
-set fish_user_paths "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin}
+set fish_user_paths "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin,.cargo/bin}
 
 set -x GPG_TTY (tty)
 
