@@ -13,4 +13,9 @@ hi Visual cterm=reverse ctermbg=NONE
 au FileType sh set shiftwidth=2 tabstop=2 expandtab autoindent
 au FileType yaml set shiftwidth=2 tabstop=2 expandtab autoindent
 
-colo industry
+call plug#begin()
+Plug 'fenetikm/falcon'
+Plug 'dankneon/vim'
+call plug#end()
+
+colo falcon
