@@ -1,7 +1,7 @@
 fish_vi_key_bindings
 
 
-set fish_user_paths "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.gem/ruby/*/bin,.cargo/bin}
+set fish_user_paths "$HOME/"{.local/bin,.local/go/bin,go/bin,node_modules/.bin,.cargo/bin} /usr/local/lib/ruby/gems/*/bin
 
 set -x GPG_TTY (tty)
 set -x EDITOR nvim
