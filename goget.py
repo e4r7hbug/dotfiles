@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.7
 """Update Go programs from source."""
-import subprocess
+import asyncio
 
 PACKAGES = [
     'github.com/asciimoo/wuzz',
@@ -8,13 +8,26 @@ PACKAGES = [
     'github.com/github/hub',
     'github.com/gohugoio/hugo',
     'github.com/sirupsen/logrus',
+    'github.com/wtfutil/wtf',
 ]
 
 
-def main():
+async def go_get(package):
+    """Run `go get -u -v package`."""
+    process = await asyncio.create_subprocess_shell(f'go get -u -v {package}')
+    code = await process.wait()
+    return code
+
+
+async def update():
     """Update list of Go Packages."""
-    for package in PACKAGES:
-        subprocess.run(f'go get -u -v {package}', check=True, shell=True)
+    gets = [go_get(package) for package in PACKAGES]
+    await asyncio.gather(*gets)
+
+
+def main():
+    """Entry point."""
+    asyncio.run(update())
 
 
 if __name__ == '__main__':
