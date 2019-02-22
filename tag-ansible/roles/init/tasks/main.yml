@@ -9,10 +9,9 @@
 - name: Install standard applications
   become: yes
   package:
-    name: "{{ item }}"
     state: latest
     update_cache: no
-  with_items:
+    name:
     - atop
     - bash-completion
     - dnstop
