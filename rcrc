@@ -1,2 +1,2 @@
 EXCLUDES="id_rsa*"
-UNDOTTED="package.json"
+UNDOTTED="package.json Library"
