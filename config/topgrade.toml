@@ -1,0 +1,9 @@
+git_repos = [
+    "~/credify/*",
+    "~/git/*",
+    "~/keybase/*",
+    "~/upgradetechops/*",
+]
+
+[commands]
+"Python Wheels" = "pip wheel --requirement ~/.requirements.txt"
