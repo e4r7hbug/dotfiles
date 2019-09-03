@@ -1,6 +1,7 @@
 #!/usr/bin/env xonsh
 import datetime
 import pathlib
+import random
 import shutil
 import subprocess
 
@@ -49,4 +50,4 @@ def journal(args, stdin=None):
 aliases['vj'] = journal
 
 $GPG_TTY = $(tty)
-$XONSH_COLOR_STYLE = 'arduino'
+$XONSH_COLOR_STYLE = random.choice('arduino default lovelace monokai native rainbow_dash'.split())
