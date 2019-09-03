@@ -49,5 +49,7 @@ def journal(args, stdin=None):
 
 aliases['vj'] = journal
 
+$PIPENV_SHELL = '/bin/bash'
+
 $GPG_TTY = $(tty)
 $XONSH_COLOR_STYLE = random.choice('arduino default lovelace monokai native rainbow_dash'.split())
