@@ -19,4 +19,4 @@ switch (uname)
 	set --append fish_user_paths /usr/local/sbin
 end
 
-source (pew shell_config)
+# source (pew shell_config)
