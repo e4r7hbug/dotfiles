@@ -17,8 +17,10 @@ hi CursorColumn cterm=reverse
 hi Search cterm=reverse ctermbg=NONE
 hi Visual cterm=reverse ctermbg=NONE
 
-au FileType markdown set shiftwidth=2 tabstop=2 expandtab autoindent
-au FileType sh set shiftwidth=2 tabstop=2 expandtab autoindent
-au FileType yaml set shiftwidth=2 tabstop=2 expandtab autoindent
+au FileType markdown set shiftwidth=2 tabstop=2
+au FileType sh set shiftwidth=2 tabstop=2
+au FileType yaml set shiftwidth=2 tabstop=2
+
+set expandtab autoindent
 
 colo falcon
