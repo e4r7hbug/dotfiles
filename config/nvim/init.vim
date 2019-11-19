@@ -17,6 +17,7 @@ hi CursorColumn cterm=reverse
 hi Search cterm=reverse ctermbg=NONE
 hi Visual cterm=reverse ctermbg=NONE
 
+au FileType groovy set shiftwidth=4 tabstop=4
 au FileType markdown set shiftwidth=2 tabstop=2
 au FileType sh set shiftwidth=2 tabstop=2
 au FileType yaml set shiftwidth=2 tabstop=2
