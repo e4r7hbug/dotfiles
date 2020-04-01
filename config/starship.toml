@@ -1,3 +1,11 @@
 [git_branch]
 symbol = "🌱 "
 style = "dimmed bright-green"
+
+[nodejs]
+disabled = true
+
+[env_var]
+style = "bold blue"
+symbol = "☸ "
+variable = "KUBE_ENV"
