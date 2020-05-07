@@ -7,13 +7,13 @@ call plug#end()
 
 set termguicolors
 
-set cursorline
-set cursorcolumn
-
 set mouse-=a
 
+set cursorline
+set cursorcolumn
 hi CursorLine cterm=reverse
 hi CursorColumn cterm=reverse
+
 hi Search cterm=reverse ctermbg=NONE
 hi Visual cterm=reverse ctermbg=NONE
 
