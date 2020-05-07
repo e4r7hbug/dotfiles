@@ -1,13 +1,8 @@
 #!/usr/bin/env xonsh
-import datetime
 import pathlib
 import random
-import shutil
-import subprocess
 
 HOME_PATH = pathlib.Path($HOME)
-
-TEMPLATE_PATH = HOME_PATH / '.daily_template.md'
 
 USER_BIN_PATHS = [
     '.local/go/bin',
@@ -25,28 +20,6 @@ for user_bin_path in USER_BIN_PATHS:
 
 $GOROOT = HOME_PATH / '.local' / 'go'
 
-
-def journal(args, stdin=None):
-    today = datetime.date.today()
-
-    journal_path = HOME_PATH / 'git' / 'ntangsurat.bag' / 'journal'
-    journal_file_path = journal_path / str(today.year) / '{month:02d}'.format(
-        month=today.month) / '{year:d}{month:02d}{day:02d}.md'.format(
-            year=today.year, month=today.month, day=today.day)
-
-    if not journal_file_path.parent.parent.exists():
-        journal_file_path.parent.parent.mkdir()
-
-    if not journal_file_path.parent.exists():
-        journal_file_path.parent.mkdir()
-
-    if not journal_file_path.exists():
-        shutil.copy(TEMPLATE_PATH, journal_file_path)
-
-    subprocess.run(['vim', '{0}'.format(journal_file_path)])
-
-
-aliases['vj'] = journal
 
 $PIPENV_SHELL = '/bin/bash'
 
