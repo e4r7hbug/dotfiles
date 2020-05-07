@@ -22,6 +22,8 @@ $GOROOT = HOME_PATH / '.local' / 'go'
 
 
 $PIPENV_SHELL = '/bin/bash'
+$PIPENV_SHELL_FANCY = True
+$PIPENV_SKIP_LOCK = True
 
 $GPG_TTY = $(tty)
 $XONSH_COLOR_STYLE = random.choice('arduino default lovelace monokai native rainbow_dash'.split())
