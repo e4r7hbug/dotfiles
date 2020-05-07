@@ -23,7 +23,6 @@ for user_bin_path in USER_BIN_PATHS:
     if path not in $PATH:
         $PATH.insert(0, path)
 
-$GOPATH = HOME_PATH / 'go'
 $GOROOT = HOME_PATH / '.local' / 'go'
 
 
