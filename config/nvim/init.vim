@@ -17,8 +17,10 @@ set termguicolors
 
 set mouse-=a
 
-set cursorline
+set colorcolumn=80
 set cursorcolumn
+set cursorline
+
 hi CursorLine cterm=reverse
 hi CursorColumn cterm=reverse
 
