@@ -7,6 +7,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'DankNeon/vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'fenetikm/falcon'
 
 call plug#end()
