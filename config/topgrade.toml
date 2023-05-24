@@ -1,9 +1,18 @@
-git_repos = [
-    "~/credify/*",
-    "~/git/*",
-    "~/keybase/*",
-    "~/upgradetechops/*",
+skip_notify = true
+
+disable = ["gem", "gnome_shell_extensions", "ruby_gems", "vagrant"]
+no_retry = true
+
+[git]
+repos = [
+    "~/work/*",
+    # "~/git/*",
 ]
 
 [commands]
-"Python Wheels" = "pip wheel --requirement ~/.requirements.txt"
+"brew clean" = "brew cleanup --prune=1"
+
+# "Python Wheels" = "pip wheel --requirement ~/.requirements.txt"
+
+# "stern" = "go get -u -v github.com/wercker/stern"
+# "yaegi" = "go get -u -v github.com/traefik/yaegi/cmd/yaegi"
