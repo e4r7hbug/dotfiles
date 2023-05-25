@@ -33,3 +33,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
