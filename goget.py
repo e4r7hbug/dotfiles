@@ -3,6 +3,7 @@
 import asyncio
 
 PACKAGES = [
+    'github.com/adammck/terraform-inventory',
     'github.com/asciimoo/wuzz',
     'github.com/cespare/reflex',
     'github.com/github/hub',
