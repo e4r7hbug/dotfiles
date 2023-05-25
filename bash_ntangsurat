@@ -64,3 +64,5 @@ if [ -f "$MAC_BASH_COMPLETION" ]; then
 fi
 
 export GPG_TTY="$(tty)"
+
+eval "$(rbenv init - bash)"
