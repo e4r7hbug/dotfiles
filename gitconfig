@@ -7,10 +7,14 @@
 	gpgSign = if-asked
 [core]
 	editor = vim
-	pager = diff-so-fancy | less --tabs=4 -RFX
-[color]
+	pager = delta  # diff-so-fancy | less --tabs=4 -RFX
+	hooksPath = /Users/natetangsurat/.config/git/hooks
+[delta]
+	diff-so-fancy = true
+	light = true
+	syntax-theme = Solarized (light)
 [commit]
-	template = ~/.gittemplate
+	template = ~/.work.gittemplate
 	gpgSign = true
 [webui]
 	autoupdate = true
@@ -38,5 +42,19 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[includeIf "gitdir:~/work/"]
-	path = ~/.work.gitconfig
+[includeIf "gitdir:~/.dotfiles/"]
+	path = ~/.home.gitconfig
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	ff = only
+[advice]
+	skippedCherryPicks = false
+[fetch]
+	showForcedUpdates = true
+[rebase]
+	autoSquash = true
+	updateRefs = true
