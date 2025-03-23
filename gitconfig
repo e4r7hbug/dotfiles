@@ -14,7 +14,6 @@
 	light = true
 	syntax-theme = Solarized (light)
 [commit]
-	template = ~/.work.gittemplate
 	gpgSign = true
 [webui]
 	autoupdate = true
@@ -44,6 +43,10 @@
 	whitespace = red reverse
 [includeIf "gitdir:~/.dotfiles/"]
 	path = ~/.home.gitconfig
+[includeIf "gitdir:~/work/"]
+	path = ~/.work.gitconfig
+[includeIf "gitdir:/tmp/test/work/"]
+	path = /home/e4r7hbug/.gitconfig.work.inc
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
