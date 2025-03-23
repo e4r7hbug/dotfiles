@@ -1,7 +1,0 @@
-prompt_toolkit
-pygments
-xonsh
-xonsh-apt-tabcomplete
-xonsh-click-tabcomplete
-xonsh-docker-tabcomplete
-xonsh-vox-tabcomplete
