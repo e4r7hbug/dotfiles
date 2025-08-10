@@ -43,6 +43,10 @@
 	whitespace = red reverse
 [includeIf "gitdir:~/.dotfiles/"]
 	path = ~/.home.gitconfig
+[includeIf "gitdir:~/e4r7hbug/"]
+	path = ~/.home.gitconfig
+[includeIf "gitdir:~/github/"]
+	path = ~/.home.gitconfig
 [includeIf "gitdir:~/work/"]
 	path = ~/.work.gitconfig
 [includeIf "gitdir:/tmp/test/work/"]
